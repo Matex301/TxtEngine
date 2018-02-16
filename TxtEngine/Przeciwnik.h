@@ -1,7 +1,7 @@
 #pragma once
 #include "Kolory.h"
 
-using std::string;
+using std::string; //Bezpieczniejsze ni¿ using namespace std
 
 class Przeciwnik
 {
@@ -12,9 +12,8 @@ protected:
 	int maxad;
 	int minad;
 
-
 public:
-	Przeciwnik();
+	Przeciwnik(string _nazwa, string typ, int _zycie, int _maxad, int _minad);
 	~Przeciwnik();
 };
 
