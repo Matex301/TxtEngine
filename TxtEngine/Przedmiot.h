@@ -1,5 +1,6 @@
 #pragma once
 #include "Kolory.h"
+#include "Gracz.h"
 
 using std::string;
 
