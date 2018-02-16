@@ -1,6 +1,7 @@
 #pragma once
+#include "Kolory.h"
 
-using namespace std::string;
+using std::string;
 
 class Przeciwnik
 {
