@@ -6,7 +6,7 @@ class Mikstura :
 {
 public:
 	void uzyj(Gracz &gracz);
-	Mikstura(string _nazwa, string _typ, string _rodzaj, int _wartosc, int _ilosc);
+	Mikstura(std::string _nazwa, std::string _typ, std::string _rodzaj, int _wartosc, int _ilosc);
 	~Mikstura();
 };
 

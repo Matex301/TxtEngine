@@ -10,12 +10,15 @@ Przedmiot::Przedmiot(string _nazwa, string _typ, string _rodzaj, int _wartosc, i
 void Przedmiot::wyswietl()
 {
 	system("cls");
-	Kolory::Jasnozielony("Nazwa: " + nazwa);
-	Kolory::Jasnoniebeski("Typ: " + typ);
-	Kolory::Jasnoczerwony("Rodzaj: " + rodzaj);
-	Kolory::Jasnozolty();
+	//Kolory::Jasnozielony("Nazwa: ");
+	std::cout << nazwa << std::endl;
+	//Kolory::Jasnoniebeski("Typ: ");
+	std::cout << typ << std::endl;
+	//Kolory::Jasnoczerwony("Rodzaj: ");
+	std::cout << rodzaj << std::endl;
+	//Kolory::Jasnozolty();
 	std::cout << wartosc << std::endl;
-	Kolory::Jasnopurpurowy();
+	//Kolory::Jasnopurpurowy();
 	std::cout << ilosc << std::endl;
 
 	_getch();
