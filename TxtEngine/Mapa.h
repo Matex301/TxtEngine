@@ -1,22 +1,34 @@
 #pragma once
 #include "Kolory.h"
+#include <memory>
 
 using std::string;
+using std::cout;
+using std::endl;
+
 
 class Mapa
 {
-private:
-	string nazwa;
-	int szerokosc;
-	int wysokosc;
-	int pole;
+public:
+	class Pixel
+	{
+	public:
+		string p;
+		bool collision;
+
+		Pixel();
+		~Pixel();
+	};
+
+
+protected:
+
 
 public:
 
-	Mapa(string _nazwa, int _szerokosc, int _wysokosc);
+	Mapa();
 
 	void print();
-
 
 	~Mapa();
 };

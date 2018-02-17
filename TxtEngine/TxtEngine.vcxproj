@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClInclude Include="Gracz.h" />
     <ClInclude Include="Kolory.h" />
+    <ClInclude Include="Mapa.h" />
     <ClInclude Include="Przeciwnik.h" />
     <ClInclude Include="Przedmiot.h" />
     <ClInclude Include="stdafx.h" />
@@ -157,6 +158,7 @@
   <ItemGroup>
     <ClCompile Include="Gracz.cpp" />
     <ClCompile Include="Kolory.cpp" />
+    <ClCompile Include="Mapa.cpp" />
     <ClCompile Include="Przeciwnik.cpp" />
     <ClCompile Include="Przedmiot.cpp" />
     <ClCompile Include="stdafx.cpp">
