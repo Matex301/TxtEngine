@@ -19,10 +19,9 @@ Mapa::Mapa()
 	
 }
 
-void Mapa::print(Gracz &Gracz ,std::vector<Przedmiot*> &Ekwipunek, std::vector<Przedmiot*> &Przedmioty, std::vector <Przeciwnik> &Przeciwnicy)
+void Mapa::print(Gracz &gracz ,Ekwipunek &ekwipunek, std::vector<Przedmiot*> &przedmioty, std::vector <Przeciwnik> &przeciwnicy)
 {
 	Pixel Px[20][20];
-
 
 
 	char just_opt{ '0' };
@@ -54,7 +53,7 @@ void Mapa::print(Gracz &Gracz ,std::vector<Przedmiot*> &Ekwipunek, std::vector<P
 			}
 		}
 		////##################
-		Px[x][y].p = "1";
+		Px[x][y].p = gracz.imie[0];
 		////############################Screen####################
 		if (dev_mode == true)
 		{

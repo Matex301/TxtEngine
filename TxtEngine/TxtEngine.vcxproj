@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Ekwipunek.h" />
     <ClInclude Include="Gracz.h" />
     <ClInclude Include="Kolory.h" />
     <ClInclude Include="Mapa.h" />
@@ -158,6 +159,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Ekwipunek.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Gracz.cpp" />
     <ClCompile Include="Kolory.cpp" />

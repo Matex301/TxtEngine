@@ -1,11 +1,11 @@
 //Wszyskie pliki nag³ówkowe
 #pragma once
 #include "stdafx.h"
-#include "Kolory.h"
+//#include "Kolory.h"
 
 #include "Przeciwnik.h"
 #include "Gracz.h"
-#include "Przedmiot.h"
+//#include "Przedmiot.h"
 #include "Mapa.h"
 #include "Mikstura.h"
 
@@ -21,12 +21,8 @@
 #include <time.h>
 #include <cstdlib>
 
-//Zmienne globalne
-
-//Kontenery
+std::vector <Przedmiot*> przedmioty;
 std::vector <Przeciwnik> przeciwnicy; //Tablica obiektów przeciwników
 std::vector <Mapa> mapy;
 
-std::vector <Przedmiot*> przedmioty;
-std::vector <Przedmiot*> ekwipunek;
 

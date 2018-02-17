@@ -1,13 +1,16 @@
 #pragma once
-#include "Kolory.h"
+#include "stdafx.h"
+//#include "Kolory.h"
 
 #include "Gracz.h"
-#include "Przedmiot.h"
+//#include "Przedmiot.h"
 #include "Mikstura.h"
 #include "Przeciwnik.h"
 
 #include <memory>
-#include <vector>
+//#include <vector>
+
+#include "Ekwipunek.h"
 
 using std::string;
 using std::cout;
@@ -35,7 +38,7 @@ public:
 
 	Mapa();
 
-	void print(Gracz &gracz, std::vector<Przedmiot*> &ekwipunek, std::vector<Przedmiot*> &przedmioty, std::vector <Przeciwnik> &przeciwnicy);
+	void print(Gracz &gracz, Ekwipunek &ekwipunek, std::vector<Przedmiot*> &przedmioty, std::vector <Przeciwnik> &przeciwnicy);
 
 	~Mapa();
 };

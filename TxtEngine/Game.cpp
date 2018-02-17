@@ -1,5 +1,7 @@
 #include "stdafx.h"
 #include "Nag³ówki.h"
+#include "Ekwipunek.h"
+
 
 
 void Start()
@@ -7,19 +9,29 @@ void Start()
 #pragma region Inicjalizacja
 	//Objekt gracza
 	Gracz gracz("Marcel", 100, 1, 1, 10, 15, 0);
+	Ekwipunek ekwipunek;
 
 	//Dodanie wszystkich przedmiotów
 
 	//MIKSTURY
-	Mikstura mikstura1("Mikstura HP", "Mikstura", "HP", 10, 1);
-	Mikstura mikstura2("Du¿a Mikstura HP", "Mikstura", "HP", 10, 1);
+	std::array<Mikstura, 2> Mikstury
+	{
+		Mikstura ("Mikstura HP", "Mikstura", "HP", 10, 1),
+		Mikstura ("Du¿a Mikstura HP", "Mikstura", "HP", 10, 1)
+	};
+
+
+
 
 	//Dodawanie tych przedmiotów do kontenera wszystkich przedmiotów
-	przedmioty.push_back(&mikstura1);
-	przedmioty.push_back(&mikstura2);
+	for (int i = 0; i < Mikstury.size(); i++)
+		przedmioty.push_back(&Mikstury[i]);
 
 	//Dodanie domyœlnych przedmiotów do ekwipunku
 	ekwipunek.push_back(przedmioty.at(0));
+	ekwipunek.push_back(przedmioty.at(1));
+
+	ekwipunek.wyswietl();
 
 	//Dodanie wszystkich map
 	mapy.emplace_back();

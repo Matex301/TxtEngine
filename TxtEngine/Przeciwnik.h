@@ -13,7 +13,7 @@ protected:
 	int minad;
 
 public:
-	Przeciwnik(string _nazwa, string typ, int _zycie, int _maxad, int _minad);
+	Przeciwnik(string _nazwa, string _typ, int _zycie, int _maxad, int _minad);
 	~Przeciwnik();
 };
 
