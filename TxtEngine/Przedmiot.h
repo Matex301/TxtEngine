@@ -14,7 +14,7 @@ protected:
 	int ilosc;//Iloœæ danego przedmiotu
 public:
 	void wyswietl();
-	virtual void uzyj(string rodzaj, Gracz *gracz) = 0; //Musi zostaæ nadpisane
+	virtual void uzyj(/*Gracz &gracz*/) = 0; //Musi zostaæ nadpisane
 
 	Przedmiot(string _nazwa, string _typ, string _rodzaj, int _wartosc, int _ilosc);
 	virtual ~Przedmiot();

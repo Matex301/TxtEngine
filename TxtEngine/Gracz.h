@@ -26,10 +26,11 @@ protected:
 	int unik;
 
 public:
-	std::vector<Przedmiot>Ekwipunek;
 	Gracz(string _imie, int _maxHp, int _ad, int _lvl, int _minAd, int _maxAd, int _unik);
 	~Gracz();
 
+	friend class Przedmiot;
+	friend class Mikstura;
 	friend class Mapa;
 };
 
