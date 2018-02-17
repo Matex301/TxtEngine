@@ -20,9 +20,6 @@ void Start()
 		Mikstura ("Du¿a Mikstura HP", "Mikstura", "HP", 10, 1)
 	};
 
-
-
-
 	//Dodawanie tych przedmiotów do kontenera wszystkich przedmiotów
 	for (int i = 0; i < Mikstury.size(); i++)
 		przedmioty.push_back(&Mikstury[i]);
@@ -31,8 +28,6 @@ void Start()
 	ekwipunek.push_back(przedmioty.at(0));
 	ekwipunek.push_back(przedmioty.at(1));
 
-	ekwipunek.wyswietl();
-
 	//Dodanie wszystkich map
 	mapy.emplace_back();
 
@@ -40,8 +35,6 @@ void Start()
 	przeciwnicy.emplace_back("Wilk", "Zwierze", 100, 20, 10);
 	przeciwnicy.emplace_back("Krowa", "Zwierze", 200, 1, 2);	
 
-	//WszystkiePrzedmioty.at(0)->wyswietl();
-	//WszystkiePrzedmioty.at(1)->wyswietl();
 
 
 #pragma endregion

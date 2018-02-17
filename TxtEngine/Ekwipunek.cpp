@@ -15,7 +15,6 @@ void Ekwipunek::wyswietl()
 		{
 			at(i)->wyswietl();
 		}
-		_getch();
 	}
 	catch (...)
 	{

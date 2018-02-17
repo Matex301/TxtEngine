@@ -40,6 +40,7 @@ void Mapa::print(Gracz &gracz ,Ekwipunek &ekwipunek, std::vector<Przedmiot*> &pr
 	while (true)
 	{
 		system("cls");
+		Kolory::Jasnoblekitny();
 		////#######################Refresh######################
 		for (int a = 0; a < dl; a++)
 		{
@@ -126,6 +127,11 @@ void Mapa::print(Gracz &gracz ,Ekwipunek &ekwipunek, std::vector<Przedmiot*> &pr
 				}
 			}
 		}
+
+		else if (just_opt == 'e')
+			ekwipunek.wyswietl();
+
+		
 	}
 }
 
