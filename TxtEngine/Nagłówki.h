@@ -9,6 +9,7 @@
 #include "Mapa.h"
 #include "Mikstura.h"
 
+#include <memory>
 #include <vector>
 #include <algorithm>
 #include <list>
@@ -23,9 +24,9 @@
 //Zmienne globalne
 
 //Kontenery
-std::vector <Przeciwnik> Przeciwnicy; //Tablica obiektów przeciwników
-std::vector <Przedmiot*> WszystkiePrzedmioty;
-std::vector <Mapa> Mapy;
+std::vector <Przeciwnik> przeciwnicy; //Tablica obiektów przeciwników
+std::vector <Mapa> mapy;
 
-std::vector <Przedmiot*> Ekwipunek;
+std::vector <Przedmiot*> przedmioty;
+std::vector <Przedmiot*> ekwipunek;
 

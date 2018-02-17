@@ -4,7 +4,7 @@
 
 using std::string;
 
-class Przedmiot abstract
+class Przedmiot
 {
 protected:
 	std::string nazwa; //Nie muszê t³umaczyæ

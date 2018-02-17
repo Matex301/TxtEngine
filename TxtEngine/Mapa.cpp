@@ -19,7 +19,7 @@ Mapa::Mapa()
 	
 }
 
-void Mapa::print()
+void Mapa::print(Gracz &Gracz ,std::vector<Przedmiot*> &Ekwipunek, std::vector<Przedmiot*> &Przedmioty, std::vector <Przeciwnik> &Przeciwnicy)
 {
 	Pixel Px[20][20];
 
