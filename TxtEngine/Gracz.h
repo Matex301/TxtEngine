@@ -1,11 +1,19 @@
 #pragma once
+#include <vector>
 #include "Kolory.h"
 #include "Przeciwnik.h"
+#include "Przedmiot.h"
 
 using std::string;
 
 class Gracz
 {
+public:
+	/*class Ekwipunek :public std::vector<Przedmiot>
+	{
+
+	}; */
+
 protected:
 	string imie;
 
@@ -18,7 +26,10 @@ protected:
 	int unik;
 
 public:
+	std::vector<Przedmiot>Ekwipunek;
 	Gracz(string _imie, int _maxHp, int _ad, int _lvl, int _minAd, int _maxAd, int _unik);
 	~Gracz();
+
+	friend class Mapa;
 };
 
