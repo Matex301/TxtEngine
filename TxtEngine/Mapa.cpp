@@ -5,7 +5,7 @@
 Mapa::Pixel::Pixel()
 	:p(" "), collision(false)
 {
-	
+
 }
 
 Mapa::Pixel::~Pixel()
@@ -22,6 +22,8 @@ Mapa::Mapa()
 void Mapa::print()
 {
 	Pixel Px[20][20];
+
+
 
 	char just_opt{ '0' };
 	bool dev_mode = false;
@@ -40,14 +42,14 @@ void Mapa::print()
 	{
 		system("cls");
 		////#######################Refresh######################
-		for (int i = 0; i < dl; i++)
+		for (int a = 0; a < dl; a++)
 		{
-			for (int j = 0; j < sz; j++)
+			for (int b = 0; b < sz; b++)
 			{
-				Px[i][j].p = " ";
-				if (Px[i][j].collision)
+				Px[a][b].p = " ";
+				if (Px[a][b].collision == true)
 				{
-					Px[i][j].p = "#";
+					Px[a][b].p = "#";
 				}
 			}
 		}
@@ -121,7 +123,7 @@ void Mapa::print()
 			{
 				if (y != sz - 1)
 				{
-					y--;
+					y++;
 				}
 			}
 		}
