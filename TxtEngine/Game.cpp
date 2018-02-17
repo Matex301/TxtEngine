@@ -3,7 +3,6 @@
 #include "Ekwipunek.h"
 
 
-
 void Start()
 {
 #pragma region Inicjalizacja
@@ -35,8 +34,6 @@ void Start()
 	przeciwnicy.emplace_back("Wilk", "Zwierze", 100, 20, 10);
 	przeciwnicy.emplace_back("Krowa", "Zwierze", 200, 1, 2);	
 
-
-
 #pragma endregion
 
 	//Start gry | Umieszczamy kolejno wszystkie mapy
@@ -45,5 +42,20 @@ void Start()
 
 void Update() //Dzia³a na osobnym w¹tku
 {
+	Beep(500, 500);
+	Beep(600, 400);
+	Beep(700, 300);
+	Sleep(50);
+	Beep(600, 200);
+	Beep(800, 100);
+	Beep(700, 600);
+	Beep(600, 400);
+	Beep(700, 300);
+	Beep(900, 500);
+	Sleep(30);
+	Beep(600, 300);
+	Beep(900, 100);
+	Beep(600, 300);
+	Beep(300, 500);
 
 }

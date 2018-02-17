@@ -23,7 +23,7 @@ void Przedmiot::wyswietl()
 	//Do zrobienia
 	switch (just_opt)
 	{
-	case 'u':
+	case 'u':;
 	}
 
 	system("cls");
