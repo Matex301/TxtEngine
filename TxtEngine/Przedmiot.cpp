@@ -16,9 +16,16 @@ void Przedmiot::wyswietl()
 	Kolory::Jasnozolty();
 	std::cout << "Wartosc: " << wartosc << std::endl;
 	Kolory::Jasnopurpurowy();
-	std::cout << "Ilosc: " << ilosc << std::endl;
-	Kolory::Jasnoblekitny();
-	_getch();
+	std::cout << "Ilosc: " << ilosc << std::endl << std::endl;
+	Kolory::Jasnoblekitny("U - Uzyj przedmiotu");
+	char just_opt = _getch();
+
+	//Do zrobienia
+	switch (just_opt)
+	{
+	case 'u':
+	}
+
 	system("cls");
 }
 
