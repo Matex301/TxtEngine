@@ -22,10 +22,20 @@ void Przedmiot::wyswietl()
 
 
 	Kolory::Jasnozielony();
-	if(!czyWybrany)
-		std::cout << nazwa << " " << "<" << ilosc << ">" << std::endl;
+	if (!czyWybrany)
+	{
+		std::cout << nazwa << " ";
+		Kolory::Czerwony();
+		std::cout << "<" << ilosc << ">" << std::endl;
+	}
 	else
-		std::cout << nazwa << " " << "<" << ilosc << ">" << " * " << std::endl;
+	{
+		std::cout << nazwa << " ";
+		Kolory::Czerwony();
+		std::cout << "<" << ilosc << "> ";
+		Kolory::Jasnoblekitny();
+		std::cout << "*" << std::endl;
+	}
 
 	//Do zrobienia
 }
