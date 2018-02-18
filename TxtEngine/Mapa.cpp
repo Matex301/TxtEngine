@@ -129,7 +129,7 @@ void Mapa::print(Gracz &gracz ,Ekwipunek &ekwipunek, std::vector<Przedmiot*> &pr
 		}
 
 		else if (just_opt == 'e')
-			ekwipunek.wyswietl();
+			ekwipunek.wyswietl(gracz);
 
 		
 	}

@@ -7,7 +7,7 @@ Ekwipunek::Ekwipunek()
 }
 
 
-void Ekwipunek::wyswietl()
+void Ekwipunek::wyswietl(Gracz &gracz)
 {
 	char just_opt;
 	int wybor{ 0 };
@@ -67,6 +67,7 @@ void Ekwipunek::wyswietl()
 
 		case 'u':
 		{
+			at(wybor)->uzyj(gracz);
 			at(wybor)->ilosc--;
 			if (at(wybor)->ilosc <= 0)
 			{

@@ -2,18 +2,11 @@
 #include <vector>
 #include "Kolory.h"
 #include "Przeciwnik.h"
-#include "Przedmiot.h"
 
 using std::string;
 
 class Gracz
 {
-public:
-	/*class Ekwipunek :public std::vector<Przedmiot>
-	{
-
-	}; */
-
 protected:
 	string imie;
 

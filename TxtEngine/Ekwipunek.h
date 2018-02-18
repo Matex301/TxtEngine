@@ -7,7 +7,7 @@ class Ekwipunek :
 	public std::vector<Przedmiot*>
 {
 public:
-	void wyswietl();
+	void wyswietl(Gracz &gracz);
 	void dodaj(std::vector <Przedmiot*> wszystkieprzedmioty, int id);
 
 	Ekwipunek();

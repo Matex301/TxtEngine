@@ -4,7 +4,7 @@
 
 using std::string;
 
-class Przedmiot
+class Przedmiot abstract
 {
 protected:
 	std::string nazwa; //Nie muszê t³umaczyæ
@@ -15,7 +15,7 @@ protected:
 	bool czyWybrany;
 public:
 	void wyswietl();
-	//virtual void uzyj(Gracz &gracz) = 0; //Musi zostaæ nadpisane
+	virtual void uzyj(Gracz &gracz) = 0; //Musi zostaæ nadpisane
 
 	Przedmiot(string _nazwa, string _typ, string _rodzaj, int _wartosc, int _ilosc);
 	virtual ~Przedmiot();
