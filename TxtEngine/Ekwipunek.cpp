@@ -9,18 +9,88 @@ Ekwipunek::Ekwipunek()
 
 void Ekwipunek::wyswietl()
 {
-	try
+	char just_opt;
+	int wybor{ 0 };
+	system("cls");
+	
+	do
 	{
-		for (int i = 0; i < this->size(); i++)
+		if (empty())
+			return;
+
+		system("cls");
+		try
 		{
-			at(i)->wyswietl();
+			for (int i = 0; i < size(); i++)
+			{
+				if (i == wybor)
+					at(i)->czyWybrany = true;
+				else at(i)->czyWybrany = false;
+			}
+
+			for (int i = 0; i < this->size(); i++)
+			{
+				at(i)->wyswietl();
+			}
+
+			just_opt = _getch();
+
 		}
+		catch (...)
+		{
+			system("cls");
+			Kolory::Jasnoczerwony("Ekwipunek jest pusty!");
+		}
+
+		switch (just_opt)
+		{
+		case 'a':
+		{
+			wybor--;
+			if (wybor < 0)
+			{
+				if (!empty())
+					wybor = size() - 1;
+				else return;
+			}
+		}	break;
+		case 'd':
+		{
+			wybor++;
+			if (wybor >= size())
+			{
+				if (!empty())
+					wybor = 0;
+				else return;
+			}
+		}	break;
+
+		case 'u':
+		{
+			at(wybor)->ilosc--;
+			if (at(wybor)->ilosc <= 0)
+			{
+				erase(begin() + wybor);
+
+				if (!empty())
+				{
+					if (wybor > 0)
+						wybor--;
+					else wybor = size() - 1;
+				}
+				else return;
+			}
+
+		}
+
+		}
+
+
 	}
-	catch (...)
-	{
-		Kolory::Jasnoczerwony("Ekwipunek jest pusty!");
-		_getch();
-	}
+	while (just_opt != 'e');
+
+	 
+
 }
 
 Ekwipunek::~Ekwipunek()

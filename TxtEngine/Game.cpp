@@ -13,10 +13,12 @@ void Start()
 	//Dodanie wszystkich przedmiotów
 
 	//MIKSTURY
-	std::array<Mikstura, 2> Mikstury
+	std::array<Mikstura, 4> Mikstury
 	{
 		Mikstura ("Mikstura HP", "Mikstura", "HP", 10, 1),
-		Mikstura ("Du¿a Mikstura HP", "Mikstura", "HP", 10, 1)
+		Mikstura ("Duza Mikstura HP", "Mikstura", "HP", 10, 3),
+		Mikstura("Duza Mikstura energii", "Mikstura", "energia", 10, 5),
+		Mikstura("Duza Mikstura many", "Mikstura", "mana", 10, 2)
 	};
 
 	//Dodawanie tych przedmiotów do kontenera wszystkich przedmiotów
@@ -26,6 +28,10 @@ void Start()
 	//Dodanie domyœlnych przedmiotów do ekwipunku
 	ekwipunek.push_back(przedmioty.at(0));
 	ekwipunek.push_back(przedmioty.at(1));
+	ekwipunek.push_back(przedmioty.at(2));
+	ekwipunek.push_back(przedmioty.at(3));
+
+
 
 	//Dodanie wszystkich map
 	mapy.emplace_back();
@@ -42,20 +48,6 @@ void Start()
 
 void Update() //Dzia³a na osobnym w¹tku
 {
-	Beep(500, 500);
-	Beep(600, 400);
-	Beep(700, 300);
-	Sleep(50);
-	Beep(600, 200);
-	Beep(800, 100);
-	Beep(700, 600);
-	Beep(600, 400);
-	Beep(700, 300);
-	Beep(900, 500);
-	Sleep(30);
-	Beep(600, 300);
-	Beep(900, 100);
-	Beep(600, 300);
-	Beep(300, 500);
+
 
 }
