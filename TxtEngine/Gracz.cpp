@@ -7,6 +7,11 @@ Gracz::Gracz(string _imie, int _maxHp, int _ad, int _lvl, int _minAd, int _maxAd
 {
 }
 
+void Gracz::ustawImie(string _imie)
+{
+	this->imie = _imie;
+}
+
 
 Gracz::~Gracz()
 {

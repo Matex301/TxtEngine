@@ -2,6 +2,15 @@
 #include "Nag³ówki.h"
 #include "Ekwipunek.h"
 
+void podajImie(Gracz &gracz)
+{
+	std::string imie;
+	Kolory::Jasnozielony("Jak masz na imie?");
+	std::cout << "Moje imie to ";
+	std::getline(std::cin, imie);
+	gracz.ustawImie(imie);
+}
+
 
 void Start()
 {
@@ -43,6 +52,7 @@ void Start()
 #pragma endregion
 
 	//Start gry | Umieszczamy kolejno wszystkie mapy
+	podajImie(gracz);
 	mapy.at(0).print(gracz, ekwipunek, przedmioty, przeciwnicy);
 }
 

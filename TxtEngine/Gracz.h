@@ -20,6 +20,7 @@ protected:
 
 public:
 	Gracz(string _imie, int _maxHp, int _ad, int _lvl, int _minAd, int _maxAd, int _unik);
+	void ustawImie(string _imie);
 	~Gracz();
 
 	friend class Przedmiot;
