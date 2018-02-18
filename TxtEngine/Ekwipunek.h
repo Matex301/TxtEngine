@@ -8,7 +8,7 @@ class Ekwipunek :
 {
 public:
 	void wyswietl();
-	
+	void dodaj(std::vector <Przedmiot*> wszystkieprzedmioty, int id);
 
 	Ekwipunek();
 	~Ekwipunek();

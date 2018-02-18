@@ -9,18 +9,6 @@ Przedmiot::Przedmiot(string _nazwa, string _typ, string _rodzaj, int _wartosc, i
 
 void Przedmiot::wyswietl()
 {
-	/*system("cls");
-	Kolory::Jasnozielony("Nazwa: " + nazwa);
-	Kolory::Jasnoniebeski("Typ: " + typ);
-	Kolory::Jasnoczerwony("Rodzaj: " + rodzaj);
-	Kolory::Jasnozolty();
-	std::cout << "Wartosc: " << wartosc << std::endl;
-	Kolory::Jasnopurpurowy();
-	std::cout << "Ilosc: " << ilosc << std::endl << std::endl;
-	Kolory::Jasnoblekitny("U - Uzyj przedmiotu");
-	char just_opt = _getch();  */
-
-
 	Kolory::Jasnozielony();
 	if (!czyWybrany)
 	{
@@ -34,7 +22,7 @@ void Przedmiot::wyswietl()
 		Kolory::Czerwony();
 		std::cout << "<" << ilosc << "> ";
 		Kolory::Jasnoblekitny();
-		std::cout << "*" << std::endl;
+		std::cout << "<=" << std::endl;
 	}
 
 	//Do zrobienia

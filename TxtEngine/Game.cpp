@@ -26,11 +26,11 @@ void Start()
 		przedmioty.push_back(&Mikstury[i]);
 
 	//Dodanie domyœlnych przedmiotów do ekwipunku
-	ekwipunek.push_back(przedmioty.at(0));
-	ekwipunek.push_back(przedmioty.at(1));
-	ekwipunek.push_back(przedmioty.at(2));
-	ekwipunek.push_back(przedmioty.at(3));
-
+	ekwipunek.dodaj(przedmioty, 0); 
+	ekwipunek.dodaj(przedmioty, 1);
+	ekwipunek.dodaj(przedmioty, 2);
+	ekwipunek.dodaj(przedmioty, 3);
+	ekwipunek.dodaj(przedmioty, 3); //Jak dodajemy po raz kolejny to dodajemy iloœæ, a nie nowy item
 
 
 	//Dodanie wszystkich map

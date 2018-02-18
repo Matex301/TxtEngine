@@ -93,6 +93,24 @@ void Ekwipunek::wyswietl()
 
 }
 
+void Ekwipunek::dodaj(std::vector <Przedmiot*> wszystkieprzedmioty, int id)
+{
+	bool czyJest{ false }; //Prawda, je¿eli jest taki przedmiot w ekwipunku
+
+	for (int i = 0; i < size(); i++)
+	{
+		if (at(i)->nazwa == wszystkieprzedmioty.at(id)->nazwa)
+		{
+			at(i)->ilosc += wszystkieprzedmioty.at(id)->ilosc;
+			czyJest = true;
+			break;
+		}
+	}
+
+	if(!czyJest)
+		push_back(wszystkieprzedmioty.at(id));
+}
+
 Ekwipunek::~Ekwipunek()
 {
 
